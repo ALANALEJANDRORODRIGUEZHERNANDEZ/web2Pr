@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leer y Editar CSV</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Proyecto final Aaron Web2</h1>
+  <div id="menuInicial">
+    <button id="botonSeleccionar">Seleccionar Archivo</button>
+  </div>
+  <input type="file" id="inputArchivo" accept=".csv" style="display: none;">
+  <div id="menuSecundario" style="display: none;">
+    <button id="botonLeer">Leer Archivo</button>
+    <button id="botonEliminarTodo">Eliminar Todos los Datos</button>
+    <button id="botonAgregarDatos">Insertar Datos</button>
+    <p><b>Una vez borrado todos los datos no hay manera de recuperarlos :(</b></p>
+  </div>
+  <table id="tablaCSV" style="display: none;">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
