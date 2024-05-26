@@ -71,3 +71,30 @@ function mostrarTabla() {
   document.querySelector('#tablaCSV').style.display = 'table';
 }
 
+function insertarDatos() {
+  const numColumnas = document.querySelectorAll('#tablaCSV tbody tr:first-child td').length;
+  const cuerpoTabla = document.querySelector('#tablaCSV tbody');
+  const nuevaFila = document.createElement('tr');
+
+  for (let i = 0; i < numColumnas; i++) {
+    const td = document.createElement('td');
+    td.contentEditable = true;
+    nuevaFila.appendChild(td);
+  }
+
+  const celdaEliminar = document.createElement('td');
+  const botonEliminar = document.createElement('button');
+  botonEliminar.textContent = 'Eliminar';
+  botonEliminar.classList.add('botonEliminar');
+  botonEliminar.onclick = () => nuevaFila.remove();
+  celdaEliminar.appendChild(botonEliminar);
+  nuevaFila.appendChild(celdaEliminar);
+
+  cuerpoTabla.appendChild(nuevaFila);
+}
+
+function mostrarMenuSecundario() {
+  document.querySelector('#menuInicial').style.display = 'none';
+  document.querySelector('#menuSecundario').style.display = 'block';
+
+}
