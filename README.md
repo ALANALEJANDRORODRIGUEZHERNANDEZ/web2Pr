@@ -1,5 +1,6 @@
 ## Uso
 1. Asegúrate de tener un archivo CSV con el siguiente formato:
+
 Producto | Precio | Stock
 
 ---------|--------|-------
