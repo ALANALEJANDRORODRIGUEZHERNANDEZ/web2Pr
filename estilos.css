@@ -1,0 +1,129 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para los botones */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el input de archivo */
+input[type="file"] {
+  display: none;
+}
+
+/* Estilos para el menú */
+#menuInicial, #menuSecundario {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#menuInicial button {
+  background-color: #ff9800;
+}
+
+#menuSecundario button {
+  background-color: #2196F3;
+}
+
+/* Estilos para la tabla */
+#tablaCSV {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#tablaCSV th, #tablaCSV td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+#tablaCSV th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#tablaCSV tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablaCSV tr:hover {
+  background-color: #ddd;
+}
+
+#tablaCSV th:first-child,
+#tablaCSV td:first-child {
+  border-left: none;
+  border-top-left-radius: 10px;
+}
+
+#tablaCSV th:last-child,
+#tablaCSV td:last-child {
+  border-right: none;
+  border-top-right-radius: 10px;
+}
+
+/* Estilos para el botón de seleccionar archivo */
+#botonSeleccionar {
+  background-color: #008CBA;
+  border: 2px solid #ff9800;
+}
+
+#botonSeleccionar:hover {
+  background-color: #007bb3;
+  border-color: #ff5722;
+}
+
+/* Estilos para el botón de eliminar */
+.botonEliminar {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonEliminar:hover {
+  background-color: #da190b;
+}
+
+/* Estilos para los mensajes de alerta */
+.alerta {
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: none;
+}
